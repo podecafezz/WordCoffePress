@@ -20,6 +20,6 @@ const Article = connection.define('articles',{
 Category.hasMany(Article);
 Article.belongsTo(Category);
 
-Article.sync({force: true}); // vai sincronizar esse model com as tabelas no banco de dados// Foi removido por que já foi criado as tabelas
+//Article.sync({force: true}); // vai sincronizar esse model com as tabelas no banco de dados// Foi removido por que já foi criado as tabelas
 
 module.exports = Article;

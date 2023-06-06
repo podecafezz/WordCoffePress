@@ -12,6 +12,6 @@ const Category = connection.define('categories',{
     }
 });
 
-Category.sync({force: true})// vai sincronizar esse model com as tabelas no banco de dados// Foi removido por que já foi criado as tabelas
+//Category.sync({force: true})// vai sincronizar esse model com as tabelas no banco de dados// Foi removido por que já foi criado as tabelas
 
 module.exports = Category;
