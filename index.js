@@ -6,6 +6,10 @@ const connection = require("./database/database");
 const categoriesController = require("./categories/CategoriesController")
 const articlesController = require("./articles/ArticlesController")
 
+const Article = require("./articles/Articles");
+const Category = require("./categories/Category");
+
+
 //ViewEngine - O que vai ser exibido 
 app.set('view engine','ejs');
 
@@ -33,6 +37,8 @@ app.use("/",articlesController);
 app.get("/", (req, res) => {
     res.render("index");
 });
+
+//mensagem de start do servidor
 
 app.listen(8080, () => {
     console.log("Servidor Iniciado!")

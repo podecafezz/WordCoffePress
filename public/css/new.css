@@ -1,0 +1,5 @@
+hr{
+    border: none; /* Remove a borda */
+    height: 0; /* Define a altura como zero */
+    background-color: transparent; /* Torna o fundo transparente */
+}
